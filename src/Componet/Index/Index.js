@@ -1,24 +1,32 @@
 import React from 'react';
 import { NavLink} from 'react-router-dom'
-import { Card, CardImg, CardText, CardBody,
-  CardTitle, CardSubtitle } from 'reactstrap';
-
+import { Card, CardImg, CardText, CardBody,CardTitle, CardSubtitle } from 'reactstrap';
+ // Importing CSS From Index.css which is located in same folder 
 import './Index.css'
 
-
+// Make a function instead of Class 
 function Index() {
   return (
     <div>
-      <nav className=" MainNav navbar navbar-expand-lg navbar-Dark bg-Dark fixed-top" style={{ background:"#beeced",
-  padding:"5px 150px 5px 130px"}} >
-<p  className="navbar-brand" style={{fontSize:"20px",color:'#4e9694',margin:"0 0 0 0"}}><NavLink  to="/Inner-page" style={{color:'#4e9694'}} >JifCast</NavLink></p>
-      <button className="navbar-toggler" style={{margin:"0 -100px 0 0",color:'#4e9694'}}   type="button" 
-        data-toggle="collapse" data-target="#navbarNav" 
-        aria-controls="navbarNav" aria-expanded="false" 
-        aria-label="Toggle navigation">
-      <span className="fa fa-arrow-down"  ><span style={{border:'1px solid red',background:'red',color:'white',borderRadius:100,fontSize:10}}>5</span></span>
-      </button>
-     <div className="collapse navbar-collapse" id="navbarNav">
+           <nav className=" MainNav navbar navbar-expand-lg navbar-Dark bg-Dark fixed-top" style={{ background:"#beeced"padding:"5px 150px 5px 130px"}} >
+                  <p  className="navbar-brand" style={{fontSize:"20px",color:'#4e9694',margin:"0 0 0 0"}}>
+                       <NavLink  to="/Inner-page" style={{color:'#4e9694'}} >
+                               JifCast
+                       </NavLink>
+                  </p>
+                   <button className="navbar-toggler" style={{margin:"0 -100px 0 0",color:'#4e9694'}}   type="button" 
+                           data-toggle="collapse" data-target="#navbarNav" 
+                           aria-controls="navbarNav" aria-expanded="false" 
+                           aria-label="Toggle navigation">
+                      <span className="fa fa-arrow-down"  >
+                      <span style={{border:'1px solid red',
+                                    background:'red',color:'white',
+                                    borderRadius:100,fontSize:10}}>
+                                      5
+                       </span>
+                       </span>
+                  </button>
+             <div className="collapse navbar-collapse" id="navbarNav">
   <ul className="navbar-nav ml-auto">
     <a style={{marginRight:'100px' }} className="nav-item nav-link Lineonhover" href="https://www.google.com.pk/">
       <span  className="fa fa-refresh"  style={{fontSize:'30px',color:'#4e9694'}}></span><br/><div style={{fontSize:"13px",marginLeft:'-8px',color:'#4e9694' }}>Refresh</div>
